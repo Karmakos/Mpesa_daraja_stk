@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+    <link rel="stylesheet" href="/static/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section>
+        <div class="container-sm">
+            <div class="row justify-content-center align-items-center mt-4 mb-0">
+            <div class="col-12 col-md-7 border rounded ps-3 pt-2 pb-4 mt-3 mb-3">
+                <div class="pt-4 pb-2 mb-3">
+                    <h1 class="fs-4 m-1"><i class="bi bi-wallet2 pe-2"></i> 2. Payment Method </h1>
+                    <hr>
+                    <h2 class="fs-5 m-1"><strong class="text-success">Pay</strong> With</h2>
+                    <img src="/static/images/mpesa.png" alt="Mpesa Icon" class="img-fluid m-1 mpesa-icon" />
+                    <form class="row m-1" method="post" action="/lipaNaMpesa">
+                        <div class="mb-3 ps-0">
+                            <label for="phoneNumber" class="form-label pb-1 d-block fs-6"><span class="fs-5 bold text-black pe-3 fw-bolder">Ksh 10</span> for Unlimited Internet for 1 Hour</label>
+                            <label for="phoneNumber" class="form-label pb-1 d-block fs-6">Phone Number</label>
+                            <input type="tel" class="form-control w-75" id="phoneNumber" name="phoneNumber" placeholder="0712345678"
+                                pattern="[0-9]{10}" required>
+                        </div>
+                        <button type="submit" class="btn btn-success fs-6">Renew Package</button>
+                    </form>
+                    <hr class="mt-5 ">
+                    <h2 class="fs-5 mb-4 mt-2 d-block "> <span class="text-black-75">Other</span> <strong class="text-primary">Payment Methods</strong></h2>
+                    <img src="/static/images/Paypal.png" alt="Paypal Icon" class="img-fluid mb-4 paypal-icon" />
+                    <button type="submit" class="btn btn-primary d-block mt-2 mb-4 w-25"><a href="paypal.com" class="text-white fs-6 btn-link">Paypal</a></button>
+                </div>
+                
+            <a href="/terms" class="text-end">Terms and Conditions</a>
+
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
+
+body{
+    font-family:'Rubik', 'Open Sans',  sans-serif
+}
+
+
+.paypal-icon{
+    width: 100px;
+    height: auto;
+}
+
+.mpesa-icon{
+    width: 200px;
+    height: auto;
+}
+ .btn{
+    width: fit-content;
+    text-decoration: none;
+ }
+ .btn-link{
+    text-decoration: none;
+ }
+ .text-success{
+    color: green !important;
+ }
+
+ .btn-warning{
+    background-color: rgb(216, 0, 0);
+    border: none;
+ }
+ .btn-warning:hover{
+    background-color: rgb(216, 0, 0);
+    border: none;
+ }
+ 
+ .btn-warning:active{
+    background-color: rgb(119, 0, 0) !important;
+    border: none;
+ }
+
+ .back-transparent{
+    background-color: transparent;
+ }
+ ol li{
+    list-style: none;
+ }
+
+ .btn-success{
+    background-color: #0d522c;
+    border: none;
+ }
+
+ .btn-outline{
+    border: 1px solid black;
+ }
+
+ .btn-outline:hover{
+    border: 1px solid black;
+    background-color: transparent;
+ }
+
+ .text-warning{
+    color: rgb(165, 0, 0) !important;
+}
