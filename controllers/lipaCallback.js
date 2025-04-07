@@ -55,11 +55,11 @@ const callback = (io) =>{
 
 
 
-                io.emit('paymentStatus', { message });
+                io.emit('paymentStatus', message );
 
 
 
-                res.status(200).json({ message: 'Received' });
+                res.status(200);
 
             });
 

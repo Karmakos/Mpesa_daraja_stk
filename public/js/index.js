@@ -8,11 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
           socket.on('paymentStatus', (message) => {
+
+            console.log(message)
             const failedSection = document.getElementById('failed');
             const successSection = document.getElementById('successful');
 
-
-
+            // Show Failed Page
             if (message.code === 0) {
                 failedSection.style.display = "block";
                 document.getElementById("type").innerText = message.type;
@@ -29,11 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
               setTimeout(() => {
                 window.location.pathname = "/dashboard";
               }, 5000);
-
             }
-
-
           });
+
         });
 
         if (window.location.pathname === '/') {
