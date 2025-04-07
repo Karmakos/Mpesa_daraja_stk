@@ -33,11 +33,6 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 
-// const url = await ngrok.connect({addr: 3000, authtoken: '2vHNVjXGvBU01uYNqsm76AwlpZU_6WVYqeKSXZyBY1sCULmbh'});
-
-
-
-
 app.get("/", async(req, res) => {
   console.log(req.callbackUrl)
     res.render('payment');
