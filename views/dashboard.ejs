@@ -14,14 +14,14 @@
     <div class="container-sm back-transparent">
         <div class="row back-transparent justify-content-center align-items-center mt-4 mb-0 text-center">
             <div class="col-12 col-md-7 border rounded ps-3 pt-2 pb-4 mt-3 mb-3">
-                <h1 class="fs-3 pt-3 p-3 text-warning"> <strong>Payment <span>Cancelled/ Failed</span> </strong> </h1>
-                <img src="/static/images/failed.gif" alt=" processing payment" />
-                <h2 class="fs-5 pb-3 text-warning">Payment <span>Cancelled by User/ Failed </span>  </h2>
-                <p class="fs-6 ps-5 pe-5 pb-5">The user canceled the payment. Please try again and
-                    enter the M-Pesa pin to confirm </p>
-                <p class="fs-6 ps-5 pe-5 pb-5">The payment failed due to Insufficient Funds. Please
-                    ensure you have enough Mpesa balance to buy this package.</p>
-                <button type="submit" class="btn btn-success fs-6 mb-2"><a href="/" class="text-white fs-6 btn-link" >Try Again</a></button>
+                <h1 class="fs-3 pt-3 p-3 text-success"> <strong>Welcome To the Dashboard </strong> </h1>
+                <!-- <img src="/static/images/successful.gif" alt=" processing payment" /> -->
+
+                </ol>
+                <button type="submit" class="btn btn-success fs-6 mb-2"><a href="/dashboard" class="text-white fs-6 btn-link" >Access Your Account</a></button>
+                <h3 class="fs-5 pt-3 pb-3"> Redirects in</h3>
+                <button type=" " class="btn btn-outline fs-6 mb-5 text-black btn-link"><span>5</span> Seconds</button>
+
             </div>
         </div>
     </div>
@@ -34,6 +34,8 @@
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="static/js/index.js"></script>
 
 
 

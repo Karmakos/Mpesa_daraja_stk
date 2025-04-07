@@ -10,7 +10,6 @@ export async function initNgrok(req, res, next) {
         addr: process.env.PORT || 3000,
         authtoken: process.env.NGROK_AUTHTOKEN,
       });
-      console.log(`🌐 Ngrok tunnel established at: ${callbackUrl}`);
     }
 
     // Attach to request or response locals
