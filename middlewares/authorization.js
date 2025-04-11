@@ -8,7 +8,7 @@ dotenv.config();
 const url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
 const auth = Buffer.from(`${process.env.CONSUMER_KEY}:${process.env.CONSUMER_SECRET}`).toString('base64');
 
-export async function authToken(req, res, next) { // Make it async
+export async function authToken(req, res, next) { 
     try {
         const result = await axios.get(url, {
             headers: {

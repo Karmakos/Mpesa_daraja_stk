@@ -92,7 +92,6 @@ router.post("/lipaNaMpesa", authToken, async (req, res) => {
 
                 console.log('Query response:', resultCode, resultDesc);
 
-                // Stop the interval if you get a final result (e.g., success or failure)
                 if (resultCode == '0') {
                   res.render('success',  {type: "Successful", 
                                     heading: "Payment Request Successful",
@@ -141,7 +140,7 @@ router.post("/lipaNaMpesa", authToken, async (req, res) => {
         // console.log(errorData)
         const errorMessage = errorData.errorMessage;
 
-        console.log(errorMessage);
+        // console.log(errorMessage);
         res.render('failed', {  type: "failed", 
                                 heading: "Error sending the push request",
                                 desc: errorMessage}
