@@ -14,6 +14,7 @@ A Node.js application that integrates with Safaricom's M-Pesa Daraja API to init
 
 ## Project Structure
 
+```bash
 Mpesa_daraja_stk/
 ├── controllers/
     ├── lipaCallback.js
@@ -34,6 +35,8 @@ Mpesa_daraja_stk/
 ├── server.js # Entry point of the application 
 └── README.md # 
 
+```
+
 
 ## Prerequisites
 
@@ -42,33 +45,52 @@ Mpesa_daraja_stk/
 - Safaricom Developer account
 - Ngrok account (optional for local callback testing)
 
-## 🛠 Installation
+## Installation
 
 ## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Karmakos/Mpesa_daraja_stk.git
-cd Mpesa_daraja_stk
+cd Mpesa_daraja_stk 
+```
 
 ## 2. Create an env file
 
-- Create an env file and enter your details as follows:
-- CONSUMER_KEY = 
-- CONSUMER_SECRET = 
-- DOMAIN = 
-- BusinessShortCode = 
-- MPESA_PASSKEY = 
-- NGROK_AUTHTOKEN = 
+Create an env file and enter your details as follows:
+
+```bash
+    CONSUMER_KEY = 
+    CONSUMER_SECRET = 
+    DOMAIN = 
+    BusinessShortCode = 
+    MPESA_PASSKEY = 
+    NGROK_AUTHTOKEN = 
+```
 
 ## 3. Install Node Modules
 
-run the node modules installtion command for NPM packages
-    - npm i
+Run the node modules installtion command for NPM packages
+```bash
+    npm i
+```
 
 ## 4. Run the Project
 
-run the project with the command
-    - nodemon server.js or node server.js
+Run the project with the command:
+
+```bash
+    nodemon server.js
+```
+Or just:
+
+```bash
+    node server.js
+```
+
+
+
+✨ Author
+Developed by Karmakos
 
 
 
