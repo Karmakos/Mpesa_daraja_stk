@@ -70,13 +70,21 @@ body{
    left: 0;
    top: 0;
    bottom: 0;
-   scroll-behavior: s;
+
 }
 .content-col{
    background-color: white;
 }
 .notify{
    display: none;
+}
+
+#failed{
+   display: block;
+}
+
+#successful{
+   display: block;
 }
 
 

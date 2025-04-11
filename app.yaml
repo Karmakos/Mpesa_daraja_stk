@@ -1,0 +1,18 @@
+runtime: nodejs20
+instance_class: F1
+env: standard
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 0
+  max_instances: 2
+
+
+
+env_variables:
+  CONSUMER_KEY: "CfhcAnBJPRaIu0RfcifDGLbVAg8aWHmukqVER1dJFyLx2xPw"
+  CONSUMER_SECRET: "JQXyTc6TkuOUj9bwxS7ZLSFeFZMU4wPEVjfmK3iRJljoOwFHiZSI2p1ibJ1yGMiz"
+  DOMAIN: "https://mpesa-daraja-456209.uc.r.appspot.com"
+  BusinessShortCode: "174379"
+  MPESA_PASSKEY: "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
+  NGROK_AUTHTOKEN: "2vHNVjXGvBU01uYNqsm76AwlpZU_6WVYqeKSXZyBY1sCULmbh"
+  SESSION_SECRET_KEY: "a8b7f9c0e4$5x!@32_SecretKey"
