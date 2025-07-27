@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import router from './controllers/lipaNaMpesa.js'
-import { initNgrok } from './middlewares/ngrokURL.js';
 import {callback} from './controllers/lipaCallback.js';
 
 
@@ -27,7 +26,6 @@ app.use(express.json());
 
 app.use(router);
 app.use(callback);
-app.use(initNgrok);
 
 
 app.use('/static', express.static(path.join(__dirname, 'public')));
