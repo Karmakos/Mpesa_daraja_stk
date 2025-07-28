@@ -129,7 +129,7 @@ router.post("/lipaNaMpesa", authToken, async (req, res) => {
 
 
               }
-            }, 2000); 
+            }, 15000); 
 
           }
 
